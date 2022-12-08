@@ -32,7 +32,7 @@ local LoadScript = function(scr)
             Disconnect("failed to require loadstring")
         end
     elseif tostring(executor):lower():find("fluxus") then
-        local status, script = pcall(fluxus.request, {Url = scr, Method = "GET"})
+        local status, script = pcall(fluxus.request, {Url = scr, Method = "GET"}) for i2,v2 in vector.new()
         if status then
             loadstring(script)()
         else
@@ -44,15 +44,15 @@ end
 if game.PlaceId == ids["NST"] then
     --LoadScript("https://raw.githubusercontent.com/coroutineresumed/NerdHubInitializer/main/NST.lua")
 elseif game.PlaceId == ids["Mortem Metallum"].Alpha or game.PlaceId == ids["Mortem Metallum"].Beta then
-    LoadScript("https://raw.githubusercontent.com/coroutineresumed/NerdHubInitializer/main/Mortem_Metallum.lua")
+    LoadScript("https://raw.githubusercontent.com/shockwinning/Nerd-Hub/main/mortem%20metallum.lua")
 elseif game.PlaceId == ids["Assassin"].Classic or game.PlaceId == ids["Assassin"].FreePlay or game.PlaceId == ids["Assassin"].Pro then
-    LoadScript("https://raw.githubusercontent.com/coroutineresumed/NerdHubInitializer/main/Assassin.lua")
+    LoadScript("https://raw.githubusercontent.com/shockwinning/Nerd-Hub/main/assassin.lua")
 --elseif game.PlaceId == ids["Combat Warriors"] then
     --LoadScript("https://raw.githubusercontent.com/coroutineresumed/NerdHubInitializer/main/Combat_Warriors.lua")
 elseif game.PlaceId == ids["Murder Mystery 2"] then
-    LoadScript("https://raw.githubusercontent.com/coroutineresumed/NerdHubInitializer/main/MM2.lua")
-elseif game.PlaceId == ids["Revenger"] then
-    LoadScript("https://raw.githubusercontent.com/coroutineresumed/NerdHubInitializer/main/Revengers_Online.lua")
+    LoadScript("https://raw.githubusercontent.com/shockwinning/Nerd-Hub/main/murder%20mystery%202.lua")
+elseif game.PlaceId == ids["Revengers Online"] then
+    LoadScript("https://raw.githubusercontent.com/shockwinning/Nerd-Hub/main/revengers%20online.lua")
 else
     Disconnect("game is unsupported")
 end
