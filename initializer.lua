@@ -32,7 +32,7 @@ local LoadScript = function(scr)
             Disconnect("failed to require loadstring")
         end
     elseif tostring(executor):lower():find("fluxus") then
-        local status, script = pcall(fluxus.request, {Url = scr, Method = "GET"}) for i2,v2 in vector.new()
+        local status, script = pcall(fluxus.request, {Url = scr, Method = "GET"})
         if status then
             loadstring(script)()
         else
