@@ -1,7 +1,7 @@
 local ids = {
     --["NST"] = 6008108575,
     ["Mortem Metallum"] = {Alpha = 4169490976, Beta = 8986335348},
-    ["Assassin"] = {Classic = 379614936, FreePlay = 5006801542, Pro = 860428890},
+    ["Assassin"] = {Classic = 379614936, FreePlay = 5006801542, Pro = 860428890, Comp = 866472074},
     ["Murder Mystery 2"] = 142823291,
     ["Revengers Online"] = 7021728144,
 }
@@ -45,7 +45,7 @@ if game.PlaceId == ids["NST"] then
     --LoadScript("https://raw.githubusercontent.com/coroutineresumed/NerdHubInitializer/main/NST.lua")
 elseif game.PlaceId == ids["Mortem Metallum"].Alpha or game.PlaceId == ids["Mortem Metallum"].Beta then
     LoadScript("https://raw.githubusercontent.com/shockwinning/Nerd-Hub/main/mortem%20metallum.lua")
-elseif game.PlaceId == ids["Assassin"].Classic or game.PlaceId == ids["Assassin"].FreePlay or game.PlaceId == ids["Assassin"].Pro then
+elseif game.PlaceId == ids["Assassin"].Classic or game.PlaceId == ids["Assassin"].FreePlay or game.PlaceId == ids["Assassin"].Pro or game.PlaceId == ids["Assassin"].Comp then
     LoadScript("https://raw.githubusercontent.com/shockwinning/Nerd-Hub/main/assassin.lua")
 --elseif game.PlaceId == ids["Combat Warriors"] then
     --LoadScript("https://raw.githubusercontent.com/coroutineresumed/NerdHubInitializer/main/Combat_Warriors.lua")
